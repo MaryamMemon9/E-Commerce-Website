@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+         *{
+    margin: 0px;
+  padding:0px;
+     box-sizing: border-box;
+  }
+  body{
+  background-color: palevioletred;
+ height: 100vh;
+  width: 100%;
+  }
+  .navbar{
+ width: 100%;
+  height: 10vh;
+  background-color: palevioletred;
+   display: flex;
+   justify-content: space-between;
+   box-shadow: 0 3px 10px rgba(0, 0, 0.2);
+ }
+  ul{ 
+   display: flex; 
+  }
+ li{
+  margin-right: 20px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+  }
+  li:hover{
+   border-bottom: 2px solid white;
+  }
+  #logo{
+  color: azure;
+   margin-left: 50px;
+  }
+        .socail{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10%;
+            background-color: black;
+        }
+        .socail-work{
+            background-color: black;
+        }
+        #fox{
+            margin-left:40%;
+        }
+        button{
+            margin-left:10%;
+           background-color: brown;
+        color: white;
+        border-radius:30px 30px 30px 30px;
+        border: 1px solid brown;
+        height: 50px;
+        width: 300px;
+        margin: auto;
+         
+        }
+#facebook{
+    background-color: navy;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid navy;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 40%;
+margin-top: 2%; 
+}
+#twitter{
+    background-color: skyblue;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#google{
+    background-color: red;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#linked-in{
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid blue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+/* ANIMATIONS*/
+#glass{
+    width: 300px;
+    height: 300px;
+    animation: SlideInFromLeft 1s ease-in;
+}
+@keyframes  SlideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+#water{
+    animation: SlideInFromRight 1s ease-in;
+}
+@keyframes SlideInFromRight {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/*RESPONSIVE*/
+/*TABLETS AND UNDER*/
+@media(max-width:768px){
+    .container{
+    display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
+    margin-top: 5%;
+}
+#glass{
+    margin-top: 5%;
+}
+#water{
+    margin-top: 5%;
+}
+.socail{
+            display: grid;
+             grid-template-columns: repeat(4,1fr);
+            margin-top: 10%;
+            background-color: black;
+        }
+        .socail-work{
+            background-color: black;
+        }
+        #fox{
+            margin-left:40%;
+        }
+        button{
+            margin-left:60%;
+           background-color: brown;
+        color: white;
+        border-radius:30px 30px 30px 30px;
+        border: 1px solid brown;
+        height: 50px;
+        width: 100px;
+         
+        }
+#facebook{
+    background-color: navy;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid navy;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 40%;
+margin-top: 2%; 
+}
+#twitter{
+    background-color: skyblue;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#google{
+    background-color: red;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#linked-in{
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid blue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+}
+
+  </style>
+  </head>
+  <body>
+ <!--NAVBAR-->
+ <div class="navbar">
+    <h1 id="logo">Fashion</h1>
+   <ul class="list-unstyled">
+           <li><a href="E-commerce website .html"> Home</a></li>
+           <li><a href="about .html"> About </a></li>
+           <li><a href="contact .html"> contact </a></li>
+           <li><a href="signUp .html"> Signup </a></li>
+           <li><a href="Log in .html"> Login </a></li>
+   </ul>
+</div>
+<!--ABOUT US-->
+<div class="container">
+    <div>
+<img src="data:image/jpeg;base64,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" id="glass">
+    </div>
+    <div>
+  <h1 class="text-white" id="water">ABOUT US</h1>
+ <p class="text-white" id="water">Campanies and individuals <br>that buy and sell goods<br> and services over the internet.</p>
+    </div>
+</div>
+<!--FOOTER-->
+<div class="socail">
+    <div class="work"> 
+<h1 class="text-white" style="font-style: italic;">FOOTER CONTENT</h1>
+<p class="text-white"  style="font-style: italic;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet maiores dolore<br> in doloribus possimus alias eius non. Hic dolore eos, similique iure animi nam<br> qui! Porro reiciendis necessitatibus ipsam! Assumenda.</p>
+</div>
+<div class="work">
+    <h1 class="text-white" style="font-style: italic;">LINKS</h1>
+   <p class="text-white"  style="font-style: italic;">link 1</p>
+   <p class="text-white"  style="font-style: italic;">link 2</p>
+   <p class="text-white"  style="font-style: italic;">link 3</p>
+   <p class="text-white"  style="font-style: italic;">link 4</p>
+</div>
+<div class="work">
+    <h1 class="text-white"  style="font-style: italic;">LINKS</h1>
+   <p class="text-white"  style="font-style: italic;">link 1</p>
+   <p class="text-white"  style="font-style: italic;">link 2</p>
+   <p class="text-white"  style="font-style: italic;">link 3</p>
+   <p class="text-white"  style="font-style: italic;">link 4</p>
+</div>
+<div class="work">
+    <h1 class="text-white"  style="font-style: italic;">LINKS</h1>
+   <p class="text-white"  style="font-style: italic;">link 1</p>
+   <p class="text-white"  style="font-style: italic;">link 2</p>
+   <p class="text-white"  style="font-style: italic;">link 3</p>
+   <p class="text-white"  style="font-style: italic;">link 4</p>
+</div>
+</div>
+<div class="socail-work">
+    <h1 class="text-white" id="fox"  style="font-style: italic;">Register for free</h1>
+    <button>Sing Up!</button> <br>
+    <i class="fa-brands fa-facebook" id="facebook"></i>
+    <i class="fa-brands fa-twitter" id="twitter"></i>
+    <i class="fa-brands fa-google-plus-g" id="google"></i>
+    <i class="fa-brands fa-linkedin-in" id="linked-in"></i>
+</div>
+  </body>
+  </html>

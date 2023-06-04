@@ -1,0 +1,299 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <style>
+ *{
+   margin: 0px;
+   padding:0px;
+   box-sizing: border-box;
+ }
+         
+  .navbar{
+      width: 100%;
+      height: 10vh;
+      background-color: palevioletred;
+     display: flex;
+     justify-content: space-between;
+     box-shadow: 0 3px 10px rgba(0, 0, 0.2);
+ }
+          ul{
+              display: flex; 
+          }
+          li{
+              margin-right: 20px;
+              color: white;
+              padding: 10px 20px 10px 20px;
+          }
+          li:hover{
+           border-bottom: 2px solid white;
+          }
+          #logo{
+              color: azure;
+              margin-left: 50px;
+          }
+          .socail{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10%;
+            background-color: black;
+        }
+        .socail-work{
+            background-color: black;
+        }
+        #fox{
+            margin-left:40%;
+        }
+        button{
+           background-color: brown;
+        color: white;
+        border-radius:30px 30px 30px 30px;
+        border: 1px solid brown;
+        height: 50px;
+        width: 300px;
+     margin: auto;
+     margin-left: 10%;
+        }
+#facebook{
+    background-color: navy;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid navy;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 40%;
+margin-top: 2%; 
+}
+#twitter{
+    background-color: skyblue;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#google{
+    background-color: red;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#linked-in{
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid blue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.form{
+    width: 400px;
+    height: 400px;
+     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBf_dXpgcE2TQjKiVYeKHT7JGV9D6P7xCDqg&usqp=CAU);
+    background-repeat: no-repeat;
+   background-size: cover;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    animation: SlideInFromRight 1s ease-in;
+}
+label{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+input{
+    margin-left: 3%;
+    margin-top: 2%;
+    box-shadow: black;
+}
+#unknown{
+    margin-left: 25%;
+}
+textarea{
+    margin-left:3% ;
+}
+.content{
+    animation: SlideInFromLeft 1s ease-in;
+}
+/*ANIMATION*/
+@keyframes SlideInFromLeft{
+    0%{
+        transform: scaleX(-100%);
+    }
+    100%{
+        transform: scaleX(0);
+    }
+}
+@keyframes SlideInFromRight{
+    0%{
+        transform: scaleX(100%);
+    }
+    100%{
+        transform: scaleX(0);
+    }
+}
+/*RESPONSIVE*/
+/*TABLETS AND UNDER*/
+@media(max-width:768px){
+    .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 5%;
+}
+.form{
+    margin-top: 5%;
+}
+.socail{
+ display:  grid;
+ grid-template-columns:repeat(4,1fr);
+  margin-top: 10%;
+  background-color: black;
+   }
+ .socail-work{
+  background-color: black;
+   }
+   #facebook{
+    background-color: navy;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid navy;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 40%;
+margin-top: 2%; 
+}
+#twitter{
+    background-color: skyblue;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#google{
+    background-color: red;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#linked-in{
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid blue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+}
+
+    </style>
+    <body>
+    <!--NAVBAR-->
+    <div class="navbar">
+        <h1 id="logo">Fashion</h1>
+       <ul class="list-unstyled">
+        <li><a href="E-commerce website .html"> Home</a></li>
+        <li><a href="about .html"> About </a></li>
+        <li><a href="contact .html"> contact </a></li>
+        <li><a href="signUp .html"> Signup </a></li>
+        <li><a href="Log in .html"> Login </a></li>
+       </ul>
+   </div>
+   <!--CONTACT US-->
+<div class="container">
+<div class="content">
+    <h1>Contact Us</h1>
+    <p>We would like to hear form you?</p>
+    <i class="fa-solid fa-message">connect@factor.com</i>
+    <br><br>
+    <i class="fa-solid fa-phone">12345678910</i> 
+    <br><br>
+    <i class="fa-brands fa-linkedin">-linkedin</i>
+    <br><br>
+    <i class="fa-brands fa-facebook">-facebook</i> 
+    <br><br>
+    <i class="fa-brands fa-twitter">-twitter</i>
+</div>
+<div class="form">
+    <form>
+<label>First name</label><br>
+<input type="text" placeholder="Your name"><br>
+<label>Email</label><br>
+<input type="text" placeholder="Your email"><br>
+<label>Subject</label><br>
+ <textarea row="10" col="10" placeholder="write something.."></textarea>
+<p id="unknown">By submitting this form, you<br> agree to our privacy policy</p>
+<button class="btn btn-success">Submit</button>
+    </form>
+</div>
+</div>
+   <!--FOOTER-->
+<div class="socail">
+    <div class="work"> 
+<h1 class="text-white" style="font-style: italic;">FOOTER CONTENT</h1>
+<p class="text-white"  style="font-style: italic;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet maiores dolore<br> in doloribus possimus alias eius non. Hic dolore eos, similique iure animi nam<br> qui! Porro reiciendis necessitatibus ipsam! Assumenda.</p>
+</div>
+<div class="work">
+    <h1 class="text-white" style="font-style: italic;">LINKS</h1>
+   <p class="text-white"  style="font-style: italic;">link 1</p>
+   <p class="text-white"  style="font-style: italic;">link 2</p>
+   <p class="text-white"  style="font-style: italic;">link 3</p>
+   <p class="text-white"  style="font-style: italic;">link 4</p>
+</div>
+<div class="work">
+    <h1 class="text-white"  style="font-style: italic;">LINKS</h1>
+   <p class="text-white"  style="font-style: italic;">link 1</p>
+   <p class="text-white"  style="font-style: italic;">link 2</p>
+   <p class="text-white"  style="font-style: italic;">link 3</p>
+   <p class="text-white"  style="font-style: italic;">link 4</p>
+</div>
+<div class="work">
+    <h1 class="text-white"  style="font-style: italic;">LINKS</h1>
+   <p class="text-white"  style="font-style: italic;">link 1</p>
+   <p class="text-white"  style="font-style: italic;">link 2</p>
+   <p class="text-white"  style="font-style: italic;">link 3</p>
+   <p class="text-white"  style="font-style: italic;">link 4</p>
+</div>
+</div>
+<div class="socail-work">
+    <h1 class="text-white" id="fox"  style="font-style: italic;">Register for free</h1>
+    <button>Sing Up!</button> <br>
+    <i class="fa-brands fa-facebook" id="facebook"></i>
+    <i class="fa-brands fa-twitter" id="twitter"></i>
+    <i class="fa-brands fa-google-plus-g" id="google"></i>
+    <i class="fa-brands fa-linkedin-in" id="linked-in"></i>
+</div>     
+    </body>
+</html>

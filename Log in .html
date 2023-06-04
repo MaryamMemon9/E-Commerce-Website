@@ -1,0 +1,300 @@
+<html>
+    <head>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <style>
+          *{
+             margin: 0px;
+             padding:0px;
+             box-sizing: border-box;
+           }
+           body{
+            background-color: palevioletred;
+            height: 100vh;
+            width: 100%;
+           }
+           .navbar{
+                   width: 100%;
+                   height: 10vh;
+                   background-color: palevioletred;
+                   display: flex;
+                   justify-content: space-between;
+                   box-shadow: 0 3px 10px rgba(0, 0, 0.2);
+           }
+           ul{
+               display: flex; 
+           }
+           li{
+               margin-right: 20px;
+               color: white;
+               padding: 10px 20px 10px 20px;
+           }
+           li:hover{
+            border-bottom: 2px solid white;
+           }
+           #logo{
+               color: azure;
+               margin-left: 50px;
+           }
+        .socail{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10%;
+            background-color: black;
+        }
+        .socail-work{
+            background-color: black;
+        }
+        #video{
+            margin-left:10%;
+           background-color: brown;
+        color: white;
+        border-radius:30px 30px 30px 30px;
+        border: 1px solid brown;
+        height: 50px;
+        width: 300px;
+         margin: auto;
+        }
+  
+#facebook{
+    background-color: navy;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid navy;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 40%;
+margin-top: 2%; 
+}
+#twitter{
+    background-color: skyblue;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#google{
+    background-color: red;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#linked-in{
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid blue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+.container{
+    width: 25%;
+    height: 85%;
+    background-color: white;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+#mobile{
+    text-align: center;
+}
+label{
+    margin-left: 5%;
+    font-size: 25px;
+}
+input{
+    border:none;
+}
+i{
+    margin-left: 2%;
+}
+text{
+    margin-left: 60%;
+}
+#digital{
+background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt8SKCvjy8FcnRPI_B2sZFAXi6zmZrV2Unhvkc6dfAIuqTYKladMFvs7p5tZaH52agxL8&usqp=CAU);
+border-radius: 10px 10px 10px 10px;
+border: mediumvioletred;
+width: 60%;
+margin-left: 15%;
+height: 20px;
+margin-top: 5%;
+}
+h4{
+    text-align: center;
+}
+#work{
+    background-color: navy;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    border: navy;
+    margin-left:30%;
+}
+#fox{
+    background-color: skyblue;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    border:skyblue;
+}
+#social{
+    background-color:red;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    border:red;
+}
+h3{
+    margin-left: 40%;
+}
+/*RESPONSIVE*/
+/*TABLETS AND UNDER*/
+@media(max-width:768px){
+    .container{
+    width: 30%;
+    height: 90%;
+    background-color: white;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+.socail{
+ display:  grid;
+ grid-template-columns:repeat(4,1fr);
+  margin-top: 10%;
+  background-color: black;
+   }
+ .socail-work{
+  background-color: black;
+   }
+   #facebook{
+    background-color: navy;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid navy;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 40%;
+margin-top: 2%; 
+}
+#twitter{
+    background-color: skyblue;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#google{
+    background-color: red;
+    color:white;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+#linked-in{
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid blue;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+}
+        </style>
+    </head>
+    <body>
+         <!--NAVBAR-->
+    <div class="navbar">
+        <h1 id="logo">Fashion</h1>
+       <ul class="list-unstyled">
+           <li><a href="E-commerce website .html"> Home</a></li>
+           <li><a href="about .html"> About </a></li>
+           <li><a href="contact .html"> contact </a></li>
+           <li><a href="signUp .html"> Signup </a></li>
+           <li><a href="Log in .html"> Login </a></li>
+       </ul>
+   </div>
+   <!--LOGIN-->
+        <div class="container">
+<h1 id="mobile"> Login</h1>
+<form>
+    <label>username</label><br><br>
+ <i class="fa-solid fa-person-military-to-person"></i>  <input type="text" placeholder="Type your username"><br>
+ <hr>
+<label>Password</label><br><br>
+<i class="fa-solid fa-lock"></i> <input type="text" placeholder="Type your password"><br>
+<hr>
+<text>Forget Password?</text>
+<button id="digital">LOGIN</button>
+<h4>Or Sign Up Using</h4>
+<i id="work" class="fa-brands fa-facebook"></i>
+<i id="fox" class="fa-brands fa-twitter"></i>
+<i id="social" class="fa-brands fa-google"></i>
+<h4>Or Sign Up Using</h4>
+<h4>SIGN UP</h4>
+</form>
+        </div>
+    <!--FOOTER-->
+<div class="socail">
+    <div class="work"> 
+<h1 class="text-white" style="font-style: italic;">FOOTER CONTENT</h1>
+<p class="text-white"  style="font-style: italic;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet maiores dolore<br> in doloribus possimus alias eius non. Hic dolore eos, similique iure animi nam<br> qui! Porro reiciendis necessitatibus ipsam! Assumenda.</p>
+</div>
+<div class="work">
+    <h1 class="text-white" style="font-style: italic;">LINKS</h1>
+   <p class="text-white"  style="font-style: italic;">link 1</p>
+   <p class="text-white"  style="font-style: italic;">link 2</p>
+   <p class="text-white"  style="font-style: italic;">link 3</p>
+   <p class="text-white"  style="font-style: italic;">link 4</p>
+</div>
+<div class="work">
+    <h1 class="text-white"  style="font-style: italic;">LINKS</h1>
+   <p class="text-white"  style="font-style: italic;">link 1</p>
+   <p class="text-white"  style="font-style: italic;">link 2</p>
+   <p class="text-white"  style="font-style: italic;">link 3</p>
+   <p class="text-white"  style="font-style: italic;">link 4</p>
+</div>
+<div class="work">
+    <h1 class="text-white"  style="font-style: italic;">LINKS</h1>
+   <p class="text-white"  style="font-style: italic;">link 1</p>
+   <p class="text-white"  style="font-style: italic;">link 2</p>
+   <p class="text-white"  style="font-style: italic;">link 3</p>
+   <p class="text-white"  style="font-style: italic;">link 4</p>
+</div>
+</div>
+<div class="socail-work">
+  <h3 class="text-white">Register For Free</h3>
+    <button id="video">Sing Up!</button> <br>
+    <i class="fa-brands fa-facebook" id="facebook"></i>
+    <i class="fa-brands fa-twitter" id="twitter"></i>
+    <i class="fa-brands fa-google-plus-g" id="google"></i>
+    <i class="fa-brands fa-linkedin-in" id="linked-in"></i>
+</div>
+    </body> 
+</html>
